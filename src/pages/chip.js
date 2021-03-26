@@ -11,7 +11,6 @@ export default function Landing() {
     <div>
       <title>Becca + Frank</title>
       <Links/>
-      <div className={styles.title}>Registry </div>
       <div style ={{display: 'flex', justifyContent: 'center'}}>
         <div className ={styles.faq}>
           <div style ={{display: 'flex', justifyContent: 'center'}} ><h3>
