@@ -10,22 +10,13 @@ class Donate extends Component {
 constructor(props){
   super(props)
   this.handleGolfer = this.handleGolfer.bind(this)
-  this.handleSponsor = this.handleSponsor.bind(this)
-  this.goBack= this.goBack.bind(this)
   this.state = {life:1}
 }
 
   handleGolfer(){
-    window.location.href = 'https://checkout.square.site/merchant/ML7FRYEVBTA75/checkout/GC6G7LPB6U5PGIN7TFCU7ZVX'
+    window.location.href ='https://checkout.square.site/merchant/ML7FRYEVBTA75/checkout/GC6G7LPB6U5PGIN7TFCU7ZVX'
   }
 
-  handleSponsor(){
-    this.setState({life:3})
-  }
-  goBack(){
-    this.setState({life:this.state.life = 1})
-  }
-  
   render(){
     if(this.state.life===1){
   return (
@@ -35,7 +26,9 @@ constructor(props){
         <div onClick={this.handleGolfer}className= {styles.button} style ={{backgroundColor:'red'}}>
           Individual Golfer
         </div>
-        <div className ={styles.button} onClick={this.handleSponsor} style ={{backgroundColor:'blue'}}>Sponsor </div>
+        <div className ={styles.button} style ={{backgroundColor:'blue'}}>
+        <Link to ="/sponsor"><button className={styles.navLink}>sponsor</button></Link>
+         </div>
         </div>   
         </div>   
   );
@@ -46,15 +39,6 @@ if(this.state.life === 2){
     <Links/>
     <div onClick={this.goBack}>go back</div>
     <div>Golfer</div>
-    </div>
-  )
-}
-if(this.state.life === 3){
-  return (
-    <div>
-    <Links/>
-    <div onClick={this.goBack}>go back</div>
-    <div>Sponsor</div>
     </div>
   )
 }
