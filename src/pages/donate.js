@@ -16,7 +16,7 @@ constructor(props){
 }
 
   handleGolfer(){
-    this.setState({life:2})
+    window.location.href = 'https://checkout.square.site/merchant/ML7FRYEVBTA75/checkout/GC6G7LPB6U5PGIN7TFCU7ZVX'
   }
 
   handleSponsor(){
