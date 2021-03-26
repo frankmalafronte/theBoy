@@ -16,6 +16,8 @@ export default function Links({children}) {
         </div>
         <Link to ="/chip"><button className={styles.navLink}>Chip</button></Link>
         <Link to ="https://checkout.square.site/merchant/ML7FRYEVBTA75/checkout/VDPX6YDABYBDCUNCWGXEUVGS"><button className={styles.navLink}>Donate</button> </Link>
+        <Link to ="/donate"><button className={styles.navLink}>Get Involved</button></Link>
+
       </div>
       <div>
         {children}
