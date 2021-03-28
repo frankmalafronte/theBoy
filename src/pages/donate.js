@@ -24,7 +24,7 @@ export default function Donate() {
       <Links/>
       <div style={{padding:'10px',display:'flex', justifyContent:'center'}}>
         <div style ={{display:'flex', justifyContent:'center',flex:'50%'}}>Individual Golfer</div>
-        <div style ={{display:'flex', justifyContent:'center',flex:'50%'}}>Sponsor</div>
+        <div style ={{display:'flex', justifyContent:'center',flex:'50%'}}>Sponsor (different photo here)</div>
       </div>
     <div style ={{display:'flex'}} id ="top level">
         <Link to ='https://checkout.square.site/merchant/ML7FRYEVBTA75/checkout/GC6G7LPB6U5PGIN7TFCU7ZVX' style={{flex:'50%'}}>
