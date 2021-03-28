@@ -12,15 +12,8 @@ export default function Sponsor() {
   const [faqs, setFaqs] = useState([
     {
       question: 'Presenting Sponsor',
-      answer: <div>If there’s one thing that 2020 has taught us, it’s that life is full of the unexpected — twists and turns, ups and downs. The past many months have taught us a lot about ourselves and each other, and now more than ever, we are ready to start our lives together.
-        <br />
-        <br />We want to be able to celebrate with all of our loved ones, near and far. With no clear end in sight for the pandemic, we are not confident that we’ll be able to safely gather and celebrate the way we want to within the next year.
-        <br />
-        <br />We hope to have a massive, lively, joyful in-person celebration sometime in 2022, but we just couldn’t wait to tie the knot!
-        <br />
-        <br />SO, we were inspired by the creativity of other friends and family to instead consider hosting a Zoom wedding. We chose a date that holds special significance for us: December 31, 2020, which will mark five years since we first met at a New Year’s Eve party.
-        <br />
-        <br />We hope you’ll be able to join us before the ball drops (or doesn’t — who knows?) and close out 2020 on a happy note, despite all the challenges it has brought us.</div>,
+      answer: <div> Includes: Complete day of golf for two foursomes, Sponsor recognition on all printed materials, etc etc
+     </div>,
       open: false,
     },
     {
