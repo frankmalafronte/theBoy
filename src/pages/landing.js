@@ -1,7 +1,7 @@
 import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
 import Img from 'gatsby-image';
-import Links from '../components/Links';
+import Links from '../components/links';
 import styles from '../components/styles.module.css';
 import {Link} from 'gatsby';
 
@@ -22,7 +22,7 @@ export default function Landing() {
     <div>
       <div style ={{display: 'flex', justifyContent: 'center'}}>
         <div className ={styles.faq}>
-          <Img fluid = {data.old.childImageSharp.fluid} />
+        Copy for Landing Page
         </div>
       </div>
     </div>
