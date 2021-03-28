@@ -9,7 +9,7 @@ import {Link} from 'gatsby';
 export default function Landing() {
   return (
     <div>
-      <title>Becca + Frank</title>
+      <title>The Boy</title>
       <Links/>
       <div style ={{display: 'flex', justifyContent: 'center'}}>
         <div className ={styles.faq}>

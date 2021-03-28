@@ -37,7 +37,7 @@ export default function Sponsor() {
       open: false,
     },
     {
-      question: '"5150" Sponsor (friends of Chip',
+      question: '"5150" Sponsor (friends of Chip)',
       answer: 'Sponsor name in the program',
       open: false,
     },

@@ -8,7 +8,7 @@ import styles from '../components/styles.module.css';
 export default function Accordian({faq, index, toggleFAQ}) {
   return (
     <div className = {styles.faqContainer}>
-      <title>Becca + Frank</title>
+      <title>The Boy</title>
       <div className={styles.faq}>
         <div className ={ styles.faqQuestion}
           key={index}

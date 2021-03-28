@@ -10,7 +10,7 @@ export default function SaveTheDate() {
     <div>
       <Links>
       </Links>
-      <title>Becca + Frank</title>
+      <title>The Boy</title>
       <div className={styles.center}>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScxGSO-pb8Q74_gYRAcPH9u3VXa3IPm_ouw9z_gxWXcTWfIRg/viewform?embedded=true" width="640" height="1520" frameBorder="0" marginHeight="0" marginWidth="0">Loading…</iframe>
       </div>

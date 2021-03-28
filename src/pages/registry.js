@@ -9,7 +9,7 @@ import {Link} from 'gatsby';
 export default function Photos() {
   return (
     <div>
-      <title>Becca + Frank</title>
+      <title>The Boy</title>
       <Links/>
       <div className={styles.title}>Registry </div>
       <div style ={{display: 'flex', justifyContent: 'center'}}>
