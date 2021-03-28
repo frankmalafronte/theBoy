@@ -9,15 +9,14 @@ export default function Links({children}) {
       <div className={styles.nav} >
 
         <div className={styles.dropDown} >
-          <Link to ="/"><button className={styles.dropButton}>Landing</button></Link>
+          <Link to ="/"><button className={styles.navLink}>Landing</button></Link>
           <div className ={styles.dropDownContent} id="dropDownContainer">
             {/* <Link to = "/details">Special Details</Link> */}
           </div>
         </div>
         <Link to ="/chip"><button className={styles.navLink}>Chip</button></Link>
         <Link to ="https://checkout.square.site/merchant/ML7FRYEVBTA75/checkout/VDPX6YDABYBDCUNCWGXEUVGS"><button className={styles.navLink}>Donate</button> </Link>
-        <Link to ="/donate"><button className={styles.navLink}>Get Involved</button></Link>
-
+        <Link to ="/donate"><button className={styles.navLink}>Participate</button></Link>
       </div>
       <div>
         {children}

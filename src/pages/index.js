@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'gatsby';
 import Landing from './landing';
-import Links from '../components/links';
+import Links from '../components/Links';
 import styles from '../components/styles.module.css';
 
 const IndexPage = () => (

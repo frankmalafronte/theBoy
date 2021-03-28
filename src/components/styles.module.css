@@ -255,10 +255,7 @@ h3 {
 /* Large devices (laptops/desktops, 768px and up) */
 @media only screen and (min-width: 768px) {
 
-  .button {
-    width:50%
-  }
-  
+
   h1 {
     justify-content: center;
     margin-top: 50pt;

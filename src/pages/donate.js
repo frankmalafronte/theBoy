@@ -1,48 +1,41 @@
 import React, {Component} from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
 import Img from 'gatsby-image';
-import Links from '../components/links';
+import {Links, GolferButton, SponsorButton} from '../components';
 import styles from '../components/styles.module.css';
 import {Link} from 'gatsby';
+import BackgroundImage from 'gatsby-background-image'
 
 
-class Donate extends Component {
-constructor(props){
-  super(props)
-  this.handleGolfer = this.handleGolfer.bind(this)
-  this.state = {life:1}
-}
+export default function Donate() {
+  const data = useStaticQuery(graphql`
+  query {
+    golfer: file(relativePath: { eq: "Golfer.jpeg" }) {
+      childImageSharp {
+        fluid(maxWidth:800 maxHeight:800 fit:COVER) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+        }
+      }
+    }`);
 
-  handleGolfer(){
-    window.location.href ='https://checkout.square.site/merchant/ML7FRYEVBTA75/checkout/GC6G7LPB6U5PGIN7TFCU7ZVX'
-  }
-
-  render(){
-    if(this.state.life===1){
   return (
-    <div>
-    <Links/>
-      <div style = {{ backgroundColor:'yellow' ,display:"flex", width:"100%", height:'100%',position:'fixed'}}>
-        <div onClick={this.handleGolfer}className= {styles.button} style ={{backgroundColor:'red'}}>
-          Individual Golfer
+    <div >
+      <Links/>
+      <div style={{padding:'10px',display:'flex', justifyContent:'center'}}>
+        <div style ={{display:'flex', justifyContent:'center',flex:'50%'}}>Individual Golfer</div>
+        <div style ={{display:'flex', justifyContent:'center',flex:'50%'}}>Sponsor</div>
+      </div>
+    <div style ={{display:'flex'}} id ="top level">
+        <Link to ='https://checkout.square.site/merchant/ML7FRYEVBTA75/checkout/GC6G7LPB6U5PGIN7TFCU7ZVX' style={{flex:'50%'}}>
+        <Img fluid = {data.golfer.childImageSharp.fluid} />
+        </Link>  
+        <Link to ='/sponsor' style={{flex:'50%'}}>
+        <Img fluid = {data.golfer.childImageSharp.fluid} />
+        </Link>  
+        </div>   
         </div>
-        <div className ={styles.button} style ={{backgroundColor:'blue'}}>
-        <Link to ="/sponsor"><button className={styles.navLink}>sponsor</button></Link>
-         </div>
-        </div>   
-        </div>   
   );
 }
-if(this.state.life === 2){
-  return (
-    <div>
-    <Links/>
-    <div onClick={this.goBack}>go back</div>
-    <div>Golfer</div>
-    </div>
-  )
-}
-}
-}
 
-export default Donate
+
