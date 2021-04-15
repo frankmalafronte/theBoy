@@ -1,15 +1,15 @@
 import React from 'react';
 import {Link} from 'gatsby';
-import Landing from './landing';
-import Links from '../components/links';
+import Home from './home';
+import Links from '../components/Links';
 import styles from '../components/styles.module.css';
+import Sponsors from '../components/Footer'
+
 
 const IndexPage = () => (
-  <div>
-    <Links>
-      <Landing/>
-    </Links>
-  </div>
+  <body>
+  <Home/>
+  </body>
 );
 
 export default IndexPage;

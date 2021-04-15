@@ -1,23 +1,16 @@
 import React from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
 import Img from 'gatsby-image';
-import Links from '../components/links';
+import Links from '../components/Links';
 import styles from '../components/styles.module.css';
 import {Link} from 'gatsby';
 
 
-export default function Landing() {
+export default function Chip() {
   return (
     <div>
-      <title>The Boy</title>
       <Links/>
-      <div style ={{display: 'flex', justifyContent: 'center'}}>
-        <div className ={styles.faq}>
-          <div style ={{display: 'flex', justifyContent: 'center'}} ><h3>
-            Copy for Chip page
-          </h3></div>
-        </div>
-      </div>
+     <div>hello</div>
       <Link/>
     </div>
   );
