@@ -12,16 +12,16 @@ export default function Links({children}) {
       <img src ={Logo} style={{width:'250px', height:'100%'}}/>
       </div>
       <div id="Information" style={{width:'30%'}}>
-      {/* <div style={{fontSize:'30px', paddingTop:'10px', paddingBottom:'10px'}}>
+      <div style={{fontSize:'30px', paddingTop:'10px', paddingBottom:'10px'}}>
         August 9th, 2021, at
       </div>
       <div style={{fontSize:'30px'}}>
         Racebrook Country Club
-      </div> */}
+      </div>
       </div>
       <div id = "links" style={{ display:'flex', flexDirection:"row",width:'30%',justifyContent:'end'}}>
         <Link to ="/"><button className={styles.navLink}>Home</button></Link>
-        <Link to ="/chip"><button className={styles.navLink}>Chip's Story</button></Link>
+        {/* <Link to ="/chip"><button className={styles.navLink}>Chip's Story</button></Link> */}
         <Link to ="https://tournamentfortheboy.square.site"><button style={{ color:'white',backgroundColor:'green', border:'none', borderRadius: '8px'}} className={styles.navLink}>Participate</button> </Link>
         </div>
       </div>
