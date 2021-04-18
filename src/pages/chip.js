@@ -4,14 +4,16 @@ import Img from 'gatsby-image';
 import Links from '../components/Links';
 import styles from '../components/styles.module.css';
 import {Link} from 'gatsby';
+import Footer from '../components/Footer'
+
 
 
 export default function Chip() {
   return (
-    <div>
+    <body>
       <Links/>
-     <div>hello</div>
-      <Link/>
-    </div>
+     <div className={styles.content}>hello</div>
+     <Footer/>
+    </body>
   );
 }
