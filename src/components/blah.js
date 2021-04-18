@@ -12,12 +12,12 @@ export default function Links({children}) {
       <img src ={Logo} style={{width:'250px', height:'100%'}}/>
       </div>
       <div id="Information" style={{width:'30%'}}>
-      <div style={{fontSize:'30px', paddingTop:'10px', paddingBottom:'10px'}}>
+      {/* <div style={{fontSize:'30px', paddingTop:'10px', paddingBottom:'10px'}}>
         August 9th, 2021, at
       </div>
       <div style={{fontSize:'30px'}}>
         Racebrook Country Club
-      </div>
+      </div> */}
       </div>
       <div id = "links" style={{ display:'flex', flexDirection:"row",width:'30%',justifyContent:'end'}}>
         <Link to ="/"><button className={styles.navLink}>Home</button></Link>
