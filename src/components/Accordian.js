@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {useStaticQuery, graphql} from 'gatsby';
 import Img from 'gatsby-image';
-import Links from './blah';
+import Links from './Links';
 import styles from '../components/styles.module.css';
 
 
