@@ -20,6 +20,13 @@ export default function Home() {
         }
         }
       }
+      racebrook: file(relativePath: { eq: "Racebrook.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth:800 maxHeight:800 fit:COVER cropFocus:CENTER ) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+          }
+        }
     }`);
 
   return (
@@ -30,14 +37,25 @@ export default function Home() {
         <div className={styles.heroTop}> Remember the Man<br/> Support The Boy</div>
         </BackgroundImage>
         </div>
-        {/* <div style={{backgroundColor:"green"}}>
-      <div div className={styles.heroTop}>
+        <div className ={styles.event}>
+        <div id="racebrook" style ={{width:'50%'}}>
+        <Img style ={{width:'100%', height:'80vh'}}fluid = {data.racebrook.childImageSharp.fluid}/>
+        </div>
+      <div id="allEventDetails" className ={styles.eventDetails}>
+      <div style={{ paddingTop:'10px', fontWeight:'900'}} >
          Chip Malafronte Memorial Golf Tournament For The Boy
          </div>
-         <div className={styles.heroBottom}>
+         <div  >
+          Racebrook Country Club
+        </div>
+         <div  >
           August 9th, 2021
         </div>
-        </div> */}
+        <div  >
+        10:30 Registration, 12pm start 
+        </div>
+        </div>
+        </div>
         <Footer/>
       </body>
   );
