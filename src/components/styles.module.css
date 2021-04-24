@@ -83,6 +83,9 @@ flex-shrink:0;
 /* Large devices (laptops/desktops, 768px and up) */
 @media only screen and (min-width: 768px) {
 
+  #bio {
+    padding:20px;
+  }
   
 
   h1 {
