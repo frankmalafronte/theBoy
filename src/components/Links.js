@@ -11,13 +11,7 @@ export default function Links({children}) {
       <div id ="logo" style={{width:'30%'}}>
       <img src ={Logo} style={{width:'250px', height:'100%'}}/>
       </div>
-      <div id="Information" style={{width:'30%'}}>
-      {/* <div style={{fontSize:'30px', paddingTop:'10px', paddingBottom:'10px'}}>
-        August 9th, 2021, at
-      </div>
-      <div style={{fontSize:'30px'}}>
-        Racebrook Country Club
-      </div> */}
+      <div id="Blank Space" style={{width:'30%'}}>
       </div>
       <div id = "links" style={{ display:'flex',width:'30%',justifyContent:'flex-end'}}>
          <Link to ="/"><button className={styles.navLink}>Home</button></Link>
