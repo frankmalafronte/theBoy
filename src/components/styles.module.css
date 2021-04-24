@@ -24,15 +24,15 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  /* padding-top: 20px;
-  padding-bottom: 20px; */
+  padding-top: 20px;
+  padding-bottom: 20px;
   z-index: 100;
-  background-color: rgb(27, 34, 55);
+  background-color:white;
   height:15vh
 }
 
 .navLink {
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 10px;
   padding-right: 10px;  
   background-color:white;
@@ -47,6 +47,25 @@ body {
 
 .navLink:hover {
   text-decoration: underline;
+}
+
+.navButton {
+  color:white;
+  background-color: green;
+  border:none;
+  border-radius: 8px;
+}
+
+.heroTop {
+  font-size: 25pt;
+  /* display: flex;*/
+  /* padding-right: 5%; */
+  text-align: right;
+  color: white;
+  position: absolute;
+  text-shadow: 2px 2px 12px  #414141;
+  bottom: 5%;
+  right: 5%;
 }
 
 .center {
@@ -106,10 +125,14 @@ flex-shrink:0;
   }
 
   .heroTop {
-    font-size: 45pt;
-    display: flex;
-    text-align: center;
-    padding-top: 10px;
+    font-size: 50pt;
+    /* display: flex;
+    padding-top: 10px; */
+    text-align: right;
+    color: white;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
   }
 
   .heroBottom {

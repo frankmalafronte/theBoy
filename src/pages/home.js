@@ -27,8 +27,7 @@ export default function Home() {
       <Links/>
       <div className={styles.content}>
         <BackgroundImage style ={{width:'100%', height:'80vh'}}fluid = {data.chipJP1.childImageSharp.fluid}>
-        <div style ={{color:'white', fontSize:'50px',position:'absolute', bottom:'75px', right:'5px'}}> Remember the Man</div>
-        <div style ={{color:'white', fontSize:'50px',position:'absolute', bottom:'5px', right:'5px'}}> Support The Boy</div>
+        <div className={styles.heroTop}> Remember the Man<br/> Support The Boy</div>
         </BackgroundImage>
         </div>
         {/* <div style={{backgroundColor:"green"}}>
