@@ -8,20 +8,8 @@ export default function Links({children}) {
   return (
     <div>
       <div id= "header" className={styles.nav} >
-<<<<<<< HEAD
         <div id ="header-left" style={{width:'40%'}}>
         <img src ={Logo} style={{width:'220px', height:'100%'}}/>
-=======
-      <div id ="logo" style={{width:'30%'}}>
-      <img src ={Logo} style={{width:'250px', height:'100%'}}/>
-      </div>
-      <div id="Blank Space" style={{width:'30%'}}>
-      </div>
-      <div id = "links" style={{ display:'flex',width:'30%',justifyContent:'flex-end'}}>
-         <Link to ="/"><button className={styles.navLink}>Home</button></Link>
-         <Link to ="/chip"><button className={styles.navLink}>Chip's Story</button></Link>
-        <Link to ="https://tournamentfortheboy.square.site"><button style={{ color:'white',backgroundColor:'green', border:'none', borderRadius: '8px'}} className={styles.navLink}>Participate</button> </Link>
->>>>>>> f6f74f65dc065db04a81bda5624306f7c40d3802
         </div>
      
      {/*<div id="header-center" style={{width:'20%'}}>
