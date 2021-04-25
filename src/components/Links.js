@@ -10,7 +10,7 @@ export default function Links({children}) {
     <div>
       <div id= "header" className={styles.nav} >
         <div id ="header-left" style={{width:'40%'}}>
-        <img src ={Logo} style={{width:'220px', height:'100%'}}/>
+        <img src ={LogoM} style={{width:'220px', height:'100%'}}/>
         </div>
      
      {/*<div id="header-center" style={{width:'20%'}}>
