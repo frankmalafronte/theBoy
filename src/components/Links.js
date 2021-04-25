@@ -2,7 +2,8 @@ import {Link} from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styles from '../components/styles.module.css';
-import Logo from '../content/images/TBFinal.jpg'
+import LogoM from '../content/images/TBFinal.jpg';
+import LogoD from '../content/images/TBFinal_horizontal.jpg'
 
 export default function Links({children}) {
   return (
@@ -24,7 +25,7 @@ export default function Links({children}) {
         <div id = "header-right" style={{ display:'flex',width:'50%',justifyContent:'flex-end'}}>
           <Link to ="/"><button className={styles.navLink}>Home</button></Link>
           <Link to ="/chip"><button className={styles.navLink}>Chip's Story</button></Link>
-          <Link to ="https://tournamentfortheboy.square.site"><button style={{ color:'white',backgroundColor:'green', border:'none', borderRadius: '8px'}} className={styles.navLink}>Participate</button> </Link>
+          <Link to ="https://tournamentfortheboy.square.site"><button className={styles.navButton}>Participate</button> </Link>
           </div>
       </div>
 
