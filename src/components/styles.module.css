@@ -30,7 +30,8 @@ body {
   background-color:white;
   height:15vh;
   flex-direction: column;
-  margin-bottom:20%
+  padding-bottom:16%;
+  border-bottom:20px solid white;
 }
 
 .navLink {
@@ -49,7 +50,6 @@ body {
   flex-direction: row;
   justify-content:flex-end;
   margin-top: 5%; 
-  margin-bottom: 5%
 }
 
 .logo {
@@ -269,8 +269,7 @@ width:0px
     background-color:white;
     height:130px;
     flex-direction: row;
-    margin-bottom:5%;
-
+    padding-bottom:5%;
   }
 
   .navLink {
