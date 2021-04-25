@@ -9,8 +9,8 @@ export default function Links({children}) {
   return (
     <div>
       <div id= "header" className={styles.nav} >
-        <div id ="header-left" style={{width:'40%'}}>
-        <img src ={LogoM} style={{width:'220px', height:'100%'}}/>
+        <div id= "header-left" className ={styles.headerLeft}>
+        <img src ={LogoM} className ={styles.logo}/>
         </div>
      
      {/*<div id="header-center" style={{width:'20%'}}>
@@ -22,7 +22,7 @@ export default function Links({children}) {
         </div>
         </div> */}
         
-        <div id = "header-right" style={{ display:'flex',width:'50%',justifyContent:'flex-end'}}>
+        <div id = "header-right" className ={styles.navLinks}>
           <Link to ="/"><button className={styles.navLink}>Home</button></Link>
           <Link to ="/chip"><button className={styles.navLink}>Chip's Story</button></Link>
           <Link to ="https://tournamentfortheboy.square.site"><button className={styles.navButton}>Participate</button> </Link>

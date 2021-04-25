@@ -20,34 +20,49 @@ body {
 
 .nav {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  /* justify-content: center; */
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 1%;
   z-index: 100;
   background-color:white;
-  height:15vh
+  height:15vh;
+  flex-direction: column;
+  margin-bottom:15%
 }
 
 .navLink {
   font-size: 16px;
-  padding: 10px;
   background-color:white;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  margin-right:10px;
-  margin-top: 20px
+  margin-top:10px
+}
+
+.navLinks{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  margin-top: 5%; 
+  margin-bottom: 5%
+}
+
+.logo {
+  width:150px;
+   height:100%;
+   margin-top: 5%;
 }
 
 
 .navLink:hover {
   text-decoration: underline;
 }
+
 
 .navButton {
   color:white;
@@ -59,10 +74,8 @@ body {
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  padding: 10px;
-  margin: 10px;
-  margin-top: 20px
-
+  padding: 10px; 
+  /* margin: 10px; */
 }
 
 .logoMobile {
@@ -102,15 +115,18 @@ body {
 .sponsorsContainer { 
  display: flex;
 justify-content:center;
-background-color:white;
+background-color:#3c2415;
 align-items: flex-start; 
 flex-shrink:0;
-
+position: relative;
+border: 10px solid #3c2415;
 }
 
 .sponsors {
   /* border:1px solid black; */
-  height:75px;
+  position: relative;
+  height:50px;
+  border:5px solid white;
 }
 
 
@@ -134,6 +150,40 @@ h2 {
 h3 {
   font-size: 14pt;
 }
+.eventContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.eventDetails{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom:10%;
+}
+
+.racebrookPic{
+  height:0;
+opacity: 0;
+width:0px
+}
+.racebrookButton {
+  color: teal
+}
+
+.eventTitle{
+  padding-top:10px;
+   padding-bottom:20px; 
+   font-weight:900;
+   font-size:150%;
+  /* border-bottom:1px solid green */
+}
+
+.detail{
+  font-size:15px;
+}
+
+
 
 /* Large devices (laptops/desktops, 768px and up) */
 @media only screen and (min-width: 768px) {
@@ -142,17 +192,30 @@ h3 {
     padding:20px;
   }
   
-  .event{
+  .eventContainer{
     display: flex;
+    flex-direction: row;
+    border-top: 5px solid white
+  }
+  .racebrookPic{
+    width:70%;
+    opacity:1;
+    height:80vh;
   }
 
   .eventDetails {
-    color: rgb(80, 2, 15);
-    font-size: 30px;
+    color:#3c2415;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    align-items: center;
     width:50%;
+  }
+  .eventTitle {
+    font-weight:900;
+    font-size:200%;
+    border-bottom: 2px solid green;
+    margin-bottom:10%;
+    margin-top:15%;
   }
 
   .detail{
@@ -162,6 +225,7 @@ h3 {
   .racebrookButton{
     padding-left: 20px;
     font-size:30px;
+    color:#3c2415;
   }
 
   .racebrookButton:hover {
@@ -172,8 +236,8 @@ h3 {
     font-size: 24pt;
   }
 
-  .logoDesktop {
-    width: 1000px;
+  .logo {
+    width: 225px;
   }
 
   .heroTop {
@@ -204,6 +268,9 @@ h3 {
     z-index: 100;
     background-color:white;
     height:130px;
+    flex-direction: row;
+    margin-bottom:5%;
+
   }
 
   .navLink {
@@ -218,6 +285,12 @@ h3 {
     outline: none;
     padding: 20px;
     margin-top: 20px;
+  }
+  .navLinks{
+    display:flex;
+    flex-direction: row;
+    width:'50%';
+    justify-content:'flex-end';
   }
 
   .navLink:hover {
@@ -398,5 +471,15 @@ h3 {
     border: none;
     border-radius: 4px;
   }
+
+.headerLeft {
+  width:50%;
+}
+
+.sponsors {
+  /* border:1px solid black; */
+  position: relative;
+  height:75px;
+}
 
 }

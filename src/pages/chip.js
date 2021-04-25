@@ -34,11 +34,12 @@ export default function Chip() {
           }
           nationals: file(relativePath: { eq: "nationals.jpeg" }) {
             childImageSharp {
-              fluid(maxWidth:600 maxHeight:600 fit:COVER cropFocus:NORTH ) {
+              fluid(maxWidth:1000 maxHeight:600 fit:COVER cropFocus:CENTER ) {
                 ...GatsbyImageSharpFluid_withWebp
               }
               }
             }
+  
     }`);
 
 
@@ -47,6 +48,7 @@ export default function Chip() {
     <body>
       <Links/>
       <h2>Chip's Story</h2> 
+
       <div id ="bio" className={styles.weddingParty}>
           <div className={styles.centerWrapper}>
             <div className={styles.center} ><Img className={styles.centerPic} fluid = {data.pitching.childImageSharp.fluid} /></div>

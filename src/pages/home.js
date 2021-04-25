@@ -25,7 +25,7 @@ export default function Home(props) {
       }
       racebrook: file(relativePath: { eq: "Racebrook.jpeg" }) {
         childImageSharp {
-          fluid(maxWidth:800 maxHeight:800 fit:COVER cropFocus:CENTER ) {
+          fluid(maxWidth:2000 maxHeight:800 fit:COVER cropFocus:CENTER ) {
             ...GatsbyImageSharpFluid_withWebp
           }
           }
@@ -40,15 +40,16 @@ export default function Home(props) {
         <div className={styles.heroTop}> Remember the Man<br/> Support The Boy</div>
         </BackgroundImage>
         </div>
-        <div className ={styles.event}>
-        <div id="racebrookPic" style ={{width:'50%'}}>
-        <Img style ={{width:'100%', height:'80vh'}}fluid = {data.racebrook.childImageSharp.fluid}/>
+        <div className ={styles.eventContainer}>
+        <div id="racebrookPic" className={styles.racebrookPic}>
+        <BackgroundImage style ={{width:'100%', height:'80vh'}}fluid = {data.racebrook.childImageSharp.fluid}>
+        </BackgroundImage>
         </div>
-      <div id="allEventDetails" className ={styles.eventDetails}>
-      <div className={styles.detail} style={{ paddingTop:'10px', paddingBottom:'50px', fontWeight:'900', fontSize:'37px'}} >
+        <div id="allEventDetails" className ={styles.eventDetails}>
+      <div className={styles.eventTitle} >
          1st Annual Chip Malafronte <br/> Memorial Golf Tournament 
          </div>
-         <div   id ={styles.racebook} onClick={goToRaceBrook} className={styles.racebrookButton}>
+         <div  onClick={goToRaceBrook} className={styles.racebrookButton}>
           Racebrook Country Club
         </div>
          <div className={styles.detail}  >
