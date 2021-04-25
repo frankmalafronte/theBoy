@@ -10,9 +10,14 @@ export default function Links({children}) {
     <div>
       <div id= "header" className={styles.nav} >
         <div id ="header-left" style={{width:'40%'}}>
+<<<<<<< HEAD
         {/* <img src ={LogoD} style={{height:'100%'}} className={styles.logoDesktop}/> */}
         <img src ={LogoM} style={{height:'100%'}} className={styles.logoMobile}/>
       </div>
+=======
+        <img src ={Logo} style={{width:'220px', height:'100%'}}/>
+        </div>
+>>>>>>> ccef0d02bc7683c08fb96668966bdf1c6268e544
      
      {/*<div id="header-center" style={{width:'20%'}}>
         <div style={{fontSize:'30px', paddingTop:'10px', paddingBottom:'10px'}}>

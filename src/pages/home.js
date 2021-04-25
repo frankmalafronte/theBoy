@@ -10,7 +10,10 @@ import BackgroundImage from 'gatsby-background-image'
 
 
 
-export default function Home() {
+export default function Home(props) {
+  function goToRaceBrook(){
+    window.location.href="https://goo.gl/maps/wSGQnCCgizPUEav47"
+  }
   const data = useStaticQuery(graphql`
   query {
     chipJP1: file(relativePath: { eq: "chipJP1.jpg" }) {
@@ -38,21 +41,21 @@ export default function Home() {
         </BackgroundImage>
         </div>
         <div className ={styles.event}>
-        <div id="racebrook" style ={{width:'50%'}}>
+        <div id="racebrookPic" style ={{width:'50%'}}>
         <Img style ={{width:'100%', height:'80vh'}}fluid = {data.racebrook.childImageSharp.fluid}/>
         </div>
       <div id="allEventDetails" className ={styles.eventDetails}>
-      <div style={{ paddingTop:'10px', fontWeight:'900'}} >
-         Chip Malafronte Memorial Golf Tournament For The Boy
+      <div className={styles.detail} style={{ paddingTop:'10px', paddingBottom:'50px', fontWeight:'900', fontSize:'37px'}} >
+         1st Annual Chip Malafronte <br/> Memorial Golf Tournament 
          </div>
-         <div  >
+         <div   id ={styles.racebook} onClick={goToRaceBrook} className={styles.racebrookButton}>
           Racebrook Country Club
         </div>
-         <div  >
+         <div className={styles.detail}  >
           August 9th, 2021
         </div>
-        <div  >
-        10:30 Registration, 12pm start 
+        <div className={styles.detail}  >
+        Registration: 10:30 a.m, Start: 12 p.m  
         </div>
         </div>
         </div>

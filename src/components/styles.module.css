@@ -147,14 +147,26 @@ h3 {
   }
 
   .eventDetails {
-    color:Brown;
+    color: rgb(80, 2, 15);
     font-size: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     width:50%;
   }
 
+  .detail{
+    padding-left: 20px;
+    font-size:30px;
+  }
+  .racebrookButton{
+    padding-left: 20px;
+    font-size:30px;
+  }
+
+  .racebrookButton:hover {
+    text-decoration: underline;
+  }
 
   h2 {
     font-size: 24pt;
@@ -212,6 +224,7 @@ h3 {
     text-decoration: underline;
   }
 
+<<<<<<< HEAD
   .navButton {
     color:white;
     background-color: green;
@@ -229,6 +242,9 @@ h3 {
     margin-top: 20px;
   
   }
+=======
+  
+>>>>>>> ccef0d02bc7683c08fb96668966bdf1c6268e544
 
   .title {
     display: flex;
