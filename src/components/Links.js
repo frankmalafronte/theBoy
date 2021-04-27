@@ -13,14 +13,6 @@ export default function Links({children}) {
         <img src ={LogoM} className ={styles.logo}/>
         </div>
      
-     {/*<div id="header-center" style={{width:'20%'}}>
-        <div style={{fontSize:'30px', paddingTop:'10px', paddingBottom:'10px'}}>
-          August 9th, 2021, at
-        </div>
-        <div style={{fontSize:'30px'}}>
-          Racebrook Country Club
-        </div>
-        </div> */}
         
         <div id = "header-right" className ={styles.navLinks}>
           <Link to ="/"><button className={styles.navLink}>Home</button></Link>

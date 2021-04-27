@@ -39,6 +39,13 @@ export default function Chip() {
               }
               }
             }
+            tampa: file(relativePath: { eq: "tampa.jpeg" }) {
+              childImageSharp {
+                fluid(maxWidth:900 maxHeight:700 fit:COVER cropFocus:CENTER ) {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+                }
+              }
   
     }`);
 
@@ -58,6 +65,7 @@ export default function Chip() {
             <div className={styles.center} ><Img className={styles.centerPic} fluid = {data.baby.childImageSharp.fluid} /></div>
             <br/><br/>Chip is the proud father of John Paul Malafronte, with whom he enjoyed touring National monuments and baseball stadiums across the country. Chip encouraged and coached JP in both baseball and basketball, on the field and at home. The two loved statistics and trivia, playing card games such as cribbage, spending time with family, and hanging out with their beloved dog, Bryce. John Paul continues to play sports and maintains a high academic standing in school. JP will attend Notre Dame High School, West Haven, in the fall. 
             <br/><br/>Good friends were important to Chip and he valued the longtime buddies with whom he grew up. From pick-up games on a Saturday afternoon to just hanging out, these guys shared many laughs together. 
+            <div className={styles.center} ><Img className={styles.centerPic} fluid = {data.tampa.childImageSharp.fluid} /></div>
             <br/><br/>Chip was a devoted son, brother, cousin, uncle, colleague, and friend. His tenacity, resolve, and faith in God were inspirational as he courageously defied the odds in his two-year battle with cancer. Chip leaves behind a legacy of good humor, quiet strength, and genuine kindness to all. 
             <br/><br/>This tournament is dedicated to Chip’s memory and is a celebration of his life. All proceeds from today’s event will benefit the education and the future of “The Boy.”</p>
             <div className={styles.center} ><Img className={styles.centerPic} fluid = {data.nationals.childImageSharp.fluid} /></div>
