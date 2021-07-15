@@ -55,7 +55,7 @@ export default function Home(props) {
          <div className={styles.detail}  >
           August 9, 2021
         </div>
-        <div className={styles.detail} style={{fontSize:"16pt"}}  >
+        <div className={styles.subDetail} >
         <br/><br/>
         Registration: 10:30 a.m. <br/>Shotgun Start: 12 p.m.
         <br/><br/>

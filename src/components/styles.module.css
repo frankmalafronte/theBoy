@@ -183,6 +183,9 @@ width:0px
 .detail{
   font-size:15px;
 }
+.subDetail{
+  font-size:12px
+}
 
 
 
@@ -222,6 +225,9 @@ width:0px
   .detail{
     padding-left: 20px;
     font-size:30px;
+  }
+  .subDetail{
+    font-size:20px
   }
   .racebrookButton{
     padding-left: 20px;
