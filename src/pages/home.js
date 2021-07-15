@@ -59,7 +59,9 @@ export default function Home(props) {
         <br/><br/>
         Registration: 10:30 a.m. <br/>Shotgun Start: 12 p.m.
         <br/><br/>
-        Continental Breakfast and Dinner will be served
+        Cookout Buffet Lunch: 11 a.m <br/>
+        Cocktails: 5-7 p.m <br/>
+        Buffet Dinner: 7 p.m
         <br/> 
        <br/> Dress Code: Golf Attire or Business Casual
         </div>
