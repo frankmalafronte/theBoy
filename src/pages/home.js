@@ -55,8 +55,13 @@ export default function Home(props) {
          <div className={styles.detail}  >
           August 9, 2021
         </div>
-        <div className={styles.detail}  >
-        Registration: 10:30 a.m. Start: 12 p.m.
+        <div className={styles.detail} style={{fontSize:"16pt"}}  >
+        <br/><br/>
+        Registration: 10:30 a.m. <br/>Shotgun Start: 12 p.m.
+        <br/><br/>
+        Continental Breakfast and Dinner will be served
+        <br/> 
+       <br/> Dress Code: Golf Attire or Business Casual
         </div>
         </div>
         </div>
