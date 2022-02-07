@@ -53,7 +53,7 @@ export default function Home(props) {
           Racebrook Country Club
         </div>
          <div className={styles.detail}  >
-          August 9, 2021
+          August 8, 2022
         </div>
         <div className={styles.subDetail} >
         <br/><br/>
