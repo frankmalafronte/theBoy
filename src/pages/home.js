@@ -47,7 +47,7 @@ export default function Home(props) {
         </div>
         <div id="allEventDetails" className ={styles.eventDetails}>
       <div className={styles.eventTitle} >
-         1st Annual Chip Malafronte <br/> Memorial Golf Tournament 
+         2nd Annual Chip Malafronte <br/> Memorial Golf Tournament 
          </div>
          <div  onClick={goToRaceBrook} className={styles.racebrookButton}>
           Racebrook Country Club

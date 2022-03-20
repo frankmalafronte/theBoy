@@ -17,6 +17,7 @@ export default function Links({children}) {
         <div id = "header-right" className ={styles.navLinks}>
           <Link to ="/"><button className={styles.navLink}>Home</button></Link>
           <Link to ="/chip"><button className={styles.navLink}>Chip's Story</button></Link>
+          <Link to ="/theBoy"><button className={styles.navLink}>About the Boy</button></Link>
           <Link to ="https://tournamentfortheboy.square.site"><button className={styles.navButton}>Participate</button> </Link>
           </div>
       </div>
