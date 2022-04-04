@@ -25,7 +25,7 @@ export default function theBoy() {
           }
           }
         }
-        golf: file(relativePath: { eq: "golf.jpg" }) {
+        smiling: file(relativePath: { eq: "2021/JP2.jpg" }) {
           childImageSharp {
             fluid(maxWidth:800 maxHeight:1200 fit:COVER cropFocus:CENTER ) {
               ...GatsbyImageSharpFluid_withWebp
@@ -51,7 +51,7 @@ export default function theBoy() {
             <br/><br/>John Paul continues to follow his passion for baseball, playing for The Grind baseball team in Milford where he pitched and played the outfield. 
             <br/><br/>This winter, JP began learning to ski in both Connecticut and Vermont, showing a lot of promise. His competitive nature motivates him to try keeping up with his cousin, Smithy. 
             <br/><br/>It’s been quite a year for John Paul. He’s made new friends who share his interests; they’re often seen playing pick-up basketball during lunch, talking football, and hanging out at each other’s houses.  John Paul is excited to be participating in the golf tournament again this year. If you see The Boy out on the course, be sure to say hi! 
-            <div className={styles.center} ><Img className={styles.centerPic} fluid = {data.golf.childImageSharp.fluid} /></div>
+            <div className={styles.center} ><Img className={styles.centerPic} fluid = {data.smiling.childImageSharp.fluid} /></div>
           </p>
          </div>
       </div>

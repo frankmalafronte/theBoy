@@ -5,7 +5,7 @@ import Links from '../components/Links'
 import Footer from '../components/Footer'
 import styles from '../components/styles.module.css';
 import {Link} from 'gatsby';
-import Hearst from '../content/images/hearst.jpg'
+import Hearst from '../content/images/TBFinal22.jpg'
 import BackgroundImage from 'gatsby-background-image'
 
 
@@ -23,9 +23,9 @@ export default function Home(props) {
         }
         }
       }
-      racebrook: file(relativePath: { eq: "Racebrook.jpeg" }) {
+      jpSwing: file(relativePath: { eq: "jpSwing.jpg" }) {
         childImageSharp {
-          fluid(maxWidth:2000 maxHeight:800 fit:COVER cropFocus:CENTER ) {
+          fluid(maxWidth:800 maxHeight:700 fit:COVER cropFocus:NORTH ) {
             ...GatsbyImageSharpFluid_withWebp
           }
           }
@@ -42,7 +42,7 @@ export default function Home(props) {
         </div>
         <div className ={styles.eventContainer}>
         <div id="racebrookPic" className={styles.racebrookPic}>
-        <BackgroundImage style ={{width:'100%', height:'80vh'}}fluid = {data.racebrook.childImageSharp.fluid}>
+        <BackgroundImage style ={{width:'100%', height:'100vh'}}fluid = {data.jpSwing.childImageSharp.fluid}>
         </BackgroundImage>
         </div>
         <div id="allEventDetails" className ={styles.eventDetails}>

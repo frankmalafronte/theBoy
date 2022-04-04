@@ -2,8 +2,7 @@ import {Link} from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import styles from '../components/styles.module.css';
-import LogoM from '../content/images/TBFinal.jpg';
-import LogoD from '../content/images/TBFinal_horizontal.jpg'
+import LogoM from '../content/images/TBFinal22.jpg';
 
 export default function Links({children}) {
   return (
