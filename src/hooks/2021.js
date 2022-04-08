@@ -5,14 +5,14 @@ export const get2021 = () =>{
   query {
     friends1: file(relativePath: { eq: "2021/friends1.jpg" }) {
       childImageSharp {
-        fluid(maxWidth:1200 maxHeight:1200 fit:COVER) {
+        fluid(maxWidth:1200 maxHeight:1200 fit:COVER cropFocus:CENTER) {
           ...GatsbyImageSharpFluid_withWebp
         }
         }
       }
     friends2: file(relativePath: { eq: "2021/friends2.jpg" }) {
       childImageSharp {
-        fluid(maxWidth:1200 maxHeight:1200 fit:COVER) {
+        fluid(maxWidth:1200 maxHeight:1200 fit:COVER cropFocus:CENTER) {
           ...GatsbyImageSharpFluid_withWebp
         }
         }
@@ -59,13 +59,6 @@ export const get2021 = () =>{
                 }
                 }
              }
-               heartsGroup: file(relativePath: { eq: "2021/hearstGroup.jpg" }) {
-                childImageSharp {
-                fluid(maxWidth:1200 maxHeight:1200 fit:COVER) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-              }
-            }
               jimLuigi: file(relativePath: { eq: "2021/jimLuigi.jpg" }) {
                   childImageSharp {
                     fluid(maxWidth:1200 maxHeight:1200 fit:COVER cropFocus:CENTER) {
