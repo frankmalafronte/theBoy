@@ -7,7 +7,6 @@ import {Link} from 'gatsby';
 import Footer from '../components/Footer'
 
 
-
 export default function theBoy() {
   const data = useStaticQuery(graphql`
   query {
@@ -54,6 +53,7 @@ export default function theBoy() {
           </p>
          </div>
       </div>
+      <Footer/>
     </body>
   );
 }

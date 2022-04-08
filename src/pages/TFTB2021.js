@@ -5,6 +5,7 @@ import Links from '../components/Links';
 import Gallery from '../components/Gallery';
 import {get2021} from '../hooks/2021';
 import styles from '../components/styles.module.css';
+import Footer from '../components/Footer'
 
 
 export default function TFTB2021() {
@@ -41,6 +42,7 @@ export default function TFTB2021() {
     </div>
     <Gallery photos = {data} array ={array}/>
     </div>
+    <Footer/>
     </body>
   );
 }
