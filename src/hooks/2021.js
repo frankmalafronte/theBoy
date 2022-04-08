@@ -26,7 +26,7 @@ export const get2021 = () =>{
         }
         friends4: file(relativePath: { eq: "2021/friends4.jpg" }) {
           childImageSharp {
-            fluid(maxWidth:1200 maxHeight:1200 fit:COVER) {
+            fluid(maxWidth:1200 maxHeight:1200 fit:COVER cropFocus:CENTER) {
               ...GatsbyImageSharpFluid_withWebp
             }
             }
@@ -40,7 +40,7 @@ export const get2021 = () =>{
             }
             friends6: file(relativePath: { eq: "2021/friends6.jpg" }) {
               childImageSharp {
-                fluid(maxWidth:1200 maxHeight:1200 fit:COVER) {
+                fluid(maxWidth:1200 maxHeight:1200 fit:COVER cropFocus:CENTER) {
                   ...GatsbyImageSharpFluid_withWebp
                 }
                 }
@@ -54,7 +54,7 @@ export const get2021 = () =>{
               }
               friends8: file(relativePath: { eq: "2021/friends8.jpg" }) {
               childImageSharp {
-              fluid(maxWidth:1200 maxHeight:1200 fit:COVER) {
+              fluid(maxWidth:1200 maxHeight:1200 fit:COVER cropFocus:NORTH) {
               ...GatsbyImageSharpFluid_withWebp
                 }
                 }
@@ -82,21 +82,21 @@ export const get2021 = () =>{
                 }
               JP2: file(relativePath: { eq: "2021/JP2.jpg" }) {
                 childImageSharp {
-                  fluid(maxWidth:1200 maxHeight:1200 fit:COVER cropFocus:NORTH) {
+                  fluid(maxWidth:1200 maxHeight:1200 fit:COVER cropFocus:CENTER) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                   }
                 }
               JP22: file(relativePath: { eq: "2021/JP22.jpg" }) {
                 childImageSharp {
-                  fluid(maxWidth:1200 maxHeight:1200 fit:COVER) {
+                  fluid(maxWidth:1200 maxHeight:1200 fit:CONTAIN) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                   }
                 }
               jpAnthony: file(relativePath: { eq: "2021/jpAnthony.jpg" }) {
                 childImageSharp {
-                  fluid(maxWidth:1200 maxHeight:1200 fit:COVER cropFocus:SOUTH) {
+                  fluid(maxWidth:1200 maxHeight:1200 fit:COVER cropFocus:NORTH) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                   }
@@ -131,7 +131,7 @@ export const get2021 = () =>{
                 }
               miaSelfie1: file(relativePath: { eq: "2021/miaSelfie1.jpg" }) {
                 childImageSharp {
-                  fluid(maxWidth:1200 maxHeight:1200 fit:COVER) {
+                  fluid(maxWidth:1200 maxHeight:1200 fit:CONTAIN ) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                   }
@@ -152,14 +152,14 @@ export const get2021 = () =>{
                 }
               reception2: file(relativePath: { eq: "2021/reception2.jpg" }) {
                 childImageSharp {
-                  fluid(maxWidth:1200 maxHeight:1200 fit:COVER) {
+                  fluid(maxWidth:1200 maxHeight:1200 fit:COVER cropFocus:NORTH) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                   }
                 }
               reception3: file(relativePath: { eq: "2021/reception3.jpg" }) {
                 childImageSharp {
-                  fluid(maxWidth:1200 maxHeight:1200 fit:COVER) {
+                  fluid(maxWidth:1200 maxHeight:1200 fit:COVER rotate:90 cropFocus:NORTH) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                   }
@@ -173,7 +173,7 @@ export const get2021 = () =>{
                 }
               tee: file(relativePath: { eq: "2021/tee.jpg" }) {
                 childImageSharp {
-                  fluid(maxWidth:1200 maxHeight:1200 fit:COVER) {
+                  fluid(maxWidth:1200 maxHeight:1200 rotate:90 fit:COVER) {
                     ...GatsbyImageSharpFluid_withWebp
                   }
                   }
