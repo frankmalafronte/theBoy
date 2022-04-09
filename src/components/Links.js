@@ -19,7 +19,6 @@ export default function Links({children}) {
             <Link to ="/TFTB2021"><button className={styles.navLink}>2021</button></Link>
           </div>
 
-
           <div id= "header-right" className ={styles.headerRight}>
             <Link to ="https://tournamentfortheboy.square.site"><button className={styles.navButton}>Participate</button> </Link>
           </div>
