@@ -310,6 +310,7 @@ width:0px
     height:130px;
     flex-direction: row;
     padding-bottom:2%;
+    border-bottom: 0px;
   }
 
   .navLink {
@@ -362,7 +363,6 @@ width:0px
 
   .title {
     text-align: center;
-    padding-bottom: 20px;
     margin: 0 auto;
     font-size: 250%;
   }
