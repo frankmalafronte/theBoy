@@ -12,13 +12,16 @@ export default function Links({children}) {
         <img src ={LogoM} className ={styles.logo}/>
         </div>
      
-        
-        <div id = "header-right" className ={styles.navLinks}>
-          <Link to ="/"><button className={styles.navLink}>Home</button></Link>
-          <Link to ="/chip"><button className={styles.navLink}>Chip's Story</button></Link>
-          <Link to ="/theBoy"><button className={styles.navLink}>About the Boy</button></Link>
-          <Link to ="/TFTB2021"><button className={styles.navLink}>2021</button></Link>
-          <Link to ="https://tournamentfortheboy.square.site"><button className={styles.navButton}>Participate</button> </Link>
+          <div id = "header-center" className ={styles.navLinks}>
+            <Link to ="/"><button className={styles.navLink}>Home</button></Link>
+            <Link to ="/chip"><button className={styles.navLink}>Chip's Story</button></Link>
+            <Link to ="/theBoy"><button className={styles.navLink}>About the Boy</button></Link>
+            <Link to ="/TFTB2021"><button className={styles.navLink}>2021</button></Link>
+          </div>
+
+
+          <div id= "header-right" className ={styles.headerRight}>
+            <Link to ="https://tournamentfortheboy.square.site"><button className={styles.navButton}>Participate</button> </Link>
           </div>
       </div>
 
