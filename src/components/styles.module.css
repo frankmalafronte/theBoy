@@ -45,7 +45,6 @@ body {
   margin-top:10px
 }
 
-
 .navLinks{
   display:flex;
   flex-direction: row;
@@ -99,8 +98,6 @@ body {
   margin-top: 20px;
 }
 
-
-
 .title {
   text-align: center;
   padding: 10px;
@@ -144,9 +141,6 @@ body {
   padding-right: 20px;
   background: white;
 }
-
-
-
 
 .content {
   flex: 1 0 auto; 
