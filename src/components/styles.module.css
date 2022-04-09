@@ -45,12 +45,14 @@ body {
   margin-top:10px
 }
 
+
 .navLinks{
   display:flex;
   flex-direction: row;
   align-items: center;
   justify-content:flex-end;
   margin-top: 5%; 
+  align-items: center
 }
 
 .logo {
@@ -91,12 +93,20 @@ body {
   margin-top: 10px;
 }
 
+
+
 .title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 10px;
   margin: 10px;
-  font-size: 25px;
+  font-size: 125%;
+}
+.subTitle {
+  text-align: center;
+  flex-direction: column;
+  padding: 2px;
+  margin: 2px;
+  font-size: 110%;
 }
 
 .logoMobile {
@@ -127,9 +137,11 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   background: white;
-  /* margin-left: '0%';
-  margin-right: '0%'; */
 }
+
+
+
+
 .content {
   flex: 1 0 auto; 
 }
@@ -343,11 +355,17 @@ width:0px
   }
 
   .title {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    font-size: 225%;
+  }
+
+  .subTitle {
+    text-align: center;
     padding: 10px;
     margin: 0 auto;
-    font-size: 40px;
+    font-size: 150%;
   }
 
   .centerWrapper {
