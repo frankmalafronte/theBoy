@@ -30,8 +30,7 @@ body {
   background-color:white;
   height:15vh;
   flex-direction: column;
-  padding-bottom:36%;
-  border-bottom:30px solid white;
+  padding-bottom:45%;
 }
 
 .navLink {
@@ -313,7 +312,6 @@ width:0px
     height:130px;
     flex-direction: row;
     padding-bottom:2%;
-    border-bottom: 0px;
   }
 
   .navLink {
