@@ -42,7 +42,8 @@ body {
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  margin-top:10px
+  margin-top:10px;
+  text-decoration: none;
 }
 
 .navLinks{
@@ -324,6 +325,7 @@ width:0px
     overflow: hidden;
     outline: none;
     /* padding: 20px; */
+    text-decoration: none;
     margin-top: 30px;
   }
   .navLinks{
