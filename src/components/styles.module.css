@@ -31,7 +31,7 @@ body {
   height:15vh;
   flex-direction: column;
   padding-bottom:36%;
-  border-bottom:20px solid white;
+  border-bottom:30px solid white;
 }
 
 .navLink {
@@ -43,7 +43,9 @@ body {
   overflow: hidden;
   outline: none;
   margin-top:10px;
-  text-decoration: none;
+  text-decoration:none;
+  color:black;
+
 }
 
 .navLinks{
@@ -325,7 +327,6 @@ width:0px
     overflow: hidden;
     outline: none;
     /* padding: 20px; */
-    text-decoration: none;
     margin-top: 30px;
   }
   .navLinks{
